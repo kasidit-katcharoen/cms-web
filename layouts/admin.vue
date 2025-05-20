@@ -4,10 +4,12 @@ useSeoMeta({
 });
 </script>
 <template>
-  <nav>
-    <h1>Admin Panel</h1>
-  </nav>
-  <main>
-    <slot></slot>
-  </main>
+  <div>
+    <nav>
+      <h1>Admin Panel</h1>
+    </nav>
+    <main>
+      <slot></slot>
+    </main>
+  </div>
 </template>

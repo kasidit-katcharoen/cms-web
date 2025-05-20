@@ -1,13 +1,18 @@
 <script setup lang="ts">
+if (import.meta.dev) {
+}
 definePageMeta({
-  layout: "admin",
+  layout: false,
   middleware: "only-admin",
 });
 </script>
 
 <template>
   <div>
-    <h1>Dashboard</h1>
+    <nav>Admin Panel (v2)</nav>
+    <main>
+      <NuxtPage />
+    </main>
   </div>
 </template>
 
